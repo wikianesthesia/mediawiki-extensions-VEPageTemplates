@@ -1,0 +1,80 @@
+{
+  "name": "VEPageTemplates",
+  "version": "0.1.0",
+  "author": [
+    "Chris Rishel"
+  ],
+  "license-name": "GPL-3.0-or-later",
+  "url": "https://www.mediawiki.org/wiki/Extension:VEPageTemplates",
+  "descriptionmsg": "vepagetemplates-desc",
+  "type": "editor",
+  "requires": {
+    "MediaWiki": ">= 1.35.0",
+    "extensions": {
+      "VisualEditor": ">= 0.1.2"
+    }
+  },
+  "config_prefix": "wg",
+  "config": {
+    "VEPageTemplatesExcludedNamespaces": {
+      "value": []
+    }
+  },
+  "attributes": {
+    "VisualEditor": {
+      "PluginModules": [
+        "ext.vePageTemplates"
+      ]
+    }
+  },
+  "AutoloadNamespaces": {
+    "VEPageTemplates\\": "src/"
+  },
+  "Hooks": {
+    "BeforePageDisplay": "VEPageTemplates\\Hook\\BeforePageDisplay::callback",
+    "ResourceLoaderGetConfigVars": "VEPageTemplates\\Hook\\ResourceLoaderGetConfigVars::callback"
+  },
+  "MessagesDirs": {
+    "VEPageTemplates": [
+      "i18n"
+    ]
+  },
+  "namespaces": [ {
+    "id": 8378,
+    "constant": "NS_PAGETEMPLATE",
+    "name": "PageTemplate"
+  },{
+    "id": 8379,
+    "constant": "NS_PAGETEMPLATE_TALK",
+    "name": "PageTemplate_talk"
+  } ],
+  "ResourceModules": {
+    "ext.vePageTemplates": {
+      "scripts": [
+        "ve/ve.ui.PageTemplates.js"
+      ],
+      "styles": [
+
+      ],
+      "dependencies": [
+        "ext.visualEditor.mwcore"
+      ],
+      "messages": [
+        "vepagetemplates",
+        "vepagetemplatelist",
+        "vepagetemplates-couldnotloadpagetemplate",
+        "vepagetemplates-couldnotloadpagetemplates",
+        "vepagetemplates-couldnotloadpagetemplatelist",
+        "vepagetemplates-loadingpagetemplate",
+        "vepagetemplates-pagenotempty",
+        "vepagetemplates-pagenotfound",
+        "vepagetemplates-pagetemplates"
+      ]
+    }
+  },
+  "ResourceFileModulePaths": {
+    "localBasePath": "modules",
+    "remoteExtPath": "VEPageTemplates/modules"
+  },
+  "manifest_version": 2
+}

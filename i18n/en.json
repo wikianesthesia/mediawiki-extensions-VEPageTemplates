@@ -1,0 +1,17 @@
+{
+  "@metadata": {
+    "authors": [
+      "Chris Rishel"
+    ]
+  },
+  "vepagetemplates": "VEPageTemplates",
+  "vepagetemplatelist": "",
+  "vepagetemplates-couldnotloadpagetemplate": "Could not load page template '$1'",
+  "vepagetemplates-couldnotloadpagetemplates": "Could not load page templates: $2",
+  "vepagetemplates-couldnotloadpagetemplatelist": "Could not load page template list. The page template list should be placed in a page titled 'MediaWiki:Vepagetemplatelist'.",
+  "vepagetemplates-desc": "Allows page templates to be used within VisualEditor",
+  "vepagetemplates-loadingpagetemplate": "Loading page template. Please wait...",
+  "vepagetemplates-pagenotempty": "Applying a page template will remove all existing content from this article. This action can be undone using the undo button in the top left of the editor toolbar and will not become permanent until you click \"Save Changes\".\n\nClick \"OK\" to apply the \"$1\" page template or \"cancel\" to abort.",
+  "vepagetemplates-pagenotfound": "Page '$1' not found",
+  "vepagetemplates-pagetemplates": "Page templates"
+}
